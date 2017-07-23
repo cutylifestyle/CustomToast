@@ -19,11 +19,11 @@ public class ToastUtil {
     private static Toast toast;
     private Context context;
 
-    public ToastUtil(Context context){
+    private ToastUtil(Context context){
         this.context = context;
     }
 
-    public void show(String message){
+    private void show(String message){
 
         if(toast == null && !isCreated){
             toast = new Toast(context);
